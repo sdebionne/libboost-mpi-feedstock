@@ -78,6 +78,3 @@ fi
 
 # Remove all headers as we only build Boost.MPI libraries.
 rm -r "${PREFIX}/include/boost"
-
-# Remove all CMake config as we only build Boost.MPI libraries.
-rm -r "${PREFIX}/lib/cmake"
