@@ -1,3 +1,6 @@
+bot:
+  abi_migration_branches:
+    - abi
 build_platform:
   linux_ppc64le: linux_64
 conda_forge_output_validation: true
