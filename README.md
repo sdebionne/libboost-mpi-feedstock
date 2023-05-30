@@ -1,11 +1,11 @@
-About libboost-mpi
-==================
+About libboost-mpi-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libboost-mpi-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.boost.org/
 
 Package license: BSL-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libboost-mpi-feedstock/blob/main/LICENSE.txt)
 
 Summary: Free peer-reviewed portable C++ source libraries.
 
