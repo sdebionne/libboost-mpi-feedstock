@@ -11,22 +11,23 @@ source:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('cxx') }}
 
   host:
-    - boost-cpp {{ version }}.*
+    - libboost-devel {{ version }}.*
     - {{ mpi }}
 
   run:
-    - boost-cpp {{ version }}.*
+    # explicitly depend on -devel version because we need the headers
+    - libboost-devel {{ version }}.*
     - {{ mpi }}
 
   run_constrained:
-    - libboost <0
+    - libboost >=1.82
 
 test:
   commands:
