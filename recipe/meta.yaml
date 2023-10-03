@@ -27,7 +27,7 @@ requirements:
     - {{ mpi }}
 
   run_constrained:
-    - libboost >=1.82
+    - libboost {{ version }}.*
 
 test:
   commands:
