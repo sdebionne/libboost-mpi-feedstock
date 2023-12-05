@@ -1,0 +1,35 @@
+From 2e253362d5c2ee2b8500229858cb26dd275afec1 Mon Sep 17 00:00:00 2001
+From: Alain Miniussi <alain.miniussi@oca.eu>
+Date: Mon, 18 Sep 2023 15:44:24 +0200
+Subject: [PATCH] Syntax error in windows declspec directive.
+
+---
+ boost/mpi/detail/offsets.hpp | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/boost/mpi/detail/offsets.hpp b/boost/mpi/detail/offsets.hpp
+index 8d33f8e9..e6afaa0b 100644
+--- a/boost/mpi/detail/offsets.hpp
++++ b/boost/mpi/detail/offsets.hpp
+@@ -17,10 +17,10 @@ namespace detail {
+ 
+ // Convert a sequence of sizes [S0..Sn] to a sequence displacement 
+ // [O0..On] where O[0] = 0 and O[k+1] = O[k]+S[k].
+-void BOOST_MPI_DECL sizes2offsets(int const* sizes, int* offsets, int n);
++BOOST_MPI_DECL void sizes2offsets(int const* sizes, int* offsets, int n);
+ 
+ // Same as size2offset(sizes.data(), offsets.data(), sizes.size())
+-void BOOST_MPI_DECL sizes2offsets(std::vector<int> const& sizes, std::vector<int>& offsets);
++BOOST_MPI_DECL void sizes2offsets(std::vector<int> const& sizes, std::vector<int>& offsets);
+ 
+ // Given a sequence of sizes (typically the number of records dispatched
+ // to each process in a scater) and a sequence of displacements (typically the
+@@ -33,7 +33,7 @@ void offsets2skipped(int const* sizes, int const* offsets, int* skipped, int n);
+ // displs are not already provided.
+ // If memory was allocated, returns a pointer to it
+ // otherwise null.
+-int* BOOST_MPI_DECL make_offsets(communicator const& comm, int const* sizes, int const* displs, int root = -1);
++BOOST_MPI_DECL int* make_offsets(communicator const& comm, int const* sizes, int const* displs, int root = -1);
+ 
+ // Reconstruct skip slots from sizes and offsets.
+ // Only takes place if on the root process and if 
