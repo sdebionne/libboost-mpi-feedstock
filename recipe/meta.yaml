@@ -9,7 +9,6 @@ source:
   sha256: cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454
   patches:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
-    - 20841ea1664777c45ab5c8e1ef42113e4e38cb7d.patch  # [win]
 
 build:
   number: 0
