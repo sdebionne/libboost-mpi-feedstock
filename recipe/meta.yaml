@@ -11,7 +11,9 @@ source:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
 
 build:
-  number: 1
+  number: 2
+  run_exports:
+    - libboost-mpi
 
 requirements:
   build:
@@ -23,8 +25,6 @@ requirements:
     - {{ mpi }}
 
   run:
-    # explicitly depend on -devel version because we need the headers
-    - libboost-devel {{ version }}.*
     - {{ mpi }}
 
   run_constrained:
