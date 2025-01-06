@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://boostorg.jfrog.io/artifactory/main/release/{{ version }}/source/boost_{{ version|replace(".", "_") }}.tar.bz2
+  url: https://archives.boost.io/release/{{ version }}/source/boost_{{ version|replace(".", "_") }}.tar.bz2
   sha256: af57be25cb4c4f4b413ed692fe378affb4352ea50fbe294a11ef548f4d527d89
   patches:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
