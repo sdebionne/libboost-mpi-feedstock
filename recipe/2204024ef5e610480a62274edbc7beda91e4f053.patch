@@ -9,8 +9,8 @@ Subject: [PATCH] Remove boost_python from global dependency list
 
 diff --git a/build.jam b/build.jam
 index 39d8d93d..9b90d72f 100644
---- a/build.jam
-+++ b/build.jam
+--- a/libs/mpi/build.jam
++++ b/libs/mpi/build.jam
 @@ -17,7 +17,6 @@ constant boost_dependencies :
      /boost/lexical_cast//boost_lexical_cast
      /boost/mpl//boost_mpl
