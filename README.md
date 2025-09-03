@@ -27,6 +27,13 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
+              <td>linux_64_mpiimpi-devel</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiimpi-devel" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_mpimpich</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
@@ -41,6 +48,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_aarch64_mpiimpi-devel</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiimpi-devel" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_aarch64_mpimpich</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
@@ -52,6 +66,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiimpi-devel</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiimpi-devel" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -97,10 +118,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_mpiimpi</td>
+              <td>win_64_mpiimpi-devel</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16365&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=win&configuration=win%20win_64_mpiimpi" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libboost-mpi-feedstock?branchName=main&jobName=win&configuration=win%20win_64_mpiimpi-devel" alt="variant">
                 </a>
               </td>
             </tr><tr>

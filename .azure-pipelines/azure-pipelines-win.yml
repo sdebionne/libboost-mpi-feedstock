@@ -8,8 +8,8 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_mpiimpi:
-        CONFIG: win_64_mpiimpi
+      win_64_mpiimpi-devel:
+        CONFIG: win_64_mpiimpi-devel
         UPLOAD_PACKAGES: 'True'
       win_64_mpimsmpi:
         CONFIG: win_64_mpimsmpi
