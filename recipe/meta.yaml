@@ -25,9 +25,6 @@ requirements:
     - libboost-devel {{ version }}.*
     - {{ mpi }}
 
-  run:
-    - {{ mpi }}
-
   run_constrained:
     - libboost {{ version }}.*
 
