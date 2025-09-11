@@ -10,9 +10,10 @@ source:
   patches:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
     - 0001-Fix-MSMPI-missing-MPI_CXX_BOOL.patch       # [win]
+    - 0002-Fix-MPI-compiler-detection.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - libboost-mpi
 
@@ -23,9 +24,6 @@ requirements:
 
   host:
     - libboost-devel {{ version }}.*
-    - {{ mpi }}
-
-  run:
     - {{ mpi }}
 
   run_constrained:
